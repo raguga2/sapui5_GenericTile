@@ -1,0 +1,32 @@
+html[dir="ltr"] .myAppDemoWT .myCustomButton.sapMBtn {
+ 	margin-right: 0.125rem
+}
+
+html[dir="rtl"] .myAppDemoWT .myCustomButton.sapMBtn {
+ 	margin-left: 0.125rem
+}
+
+.myAppDemoWT .myCustomText {
+	display: inline-block;
+	font-weight: bold;
+}
+    
+.button1:hover {
+background:Lavender;
+border-width:1px;
+}
+
+.button1:focus {
+color:fuchsia;
+text-decoration:underline; text-align:left;
+color:fuchsia;
+background:#ddd;
+border-color:#ddd #333 #333 #ddd;
+border-style:solid;
+border-width:1px;
+}
+
+.button1:active {
+border-color:deepskyblue;
+border-width:1px;
+}

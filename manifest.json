@@ -1,0 +1,164 @@
+{
+  "_version": "1.8.0",
+  "sap.app": {
+    "id": "namespace",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "1.0.0"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}"
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "rootView": {
+      "viewName": "namespace.view.App",
+      "type": "XML"
+    },
+    "dependencies": {
+      "minUI5Version": "1.30.0",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {},
+        "sap.ui.layout": {},
+        "sap.ui.table": {},
+        "sap.uxap": {}
+      },
+      "contentDensities": {
+        "compact": true,
+        "cozy": true
+      }
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "namespace.i18n.i18n"
+        }
+      },
+      "main": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/main.json"
+      }
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "viewPath": "namespace.view",
+        "controlId": "app",
+        "controlAggregation": "pages",
+        "transition": "slide",
+				"async": true,
+        "bypassed": {
+          "target": "notFound"
+        }
+      },
+      "routes": [
+				{
+          "pattern": "NotFound",
+          "name": "notFound",
+          "target": "notFound"
+        },
+        {
+          "pattern": "",
+          "name": "main",
+          "target": [
+            "menu",
+            "catalog"
+          ]
+        },
+        {
+          "pattern": "catalog",
+          "name": "catalog",
+          "target": [
+            "menu",
+            "catalog"
+          ]
+        },
+        {
+          "pattern": "catalog/{category}",
+          "name": "category",
+          "target": [
+            "menu",
+            "category"
+          ]
+        },
+        {
+          "pattern": "catalog/{category}/{item}",
+          "name": "item",
+          "target": [
+            "menu",
+            "item"
+          ]
+        },
+        {
+          "pattern": "busket",
+          "name": "busket",
+          "target": [
+            "menu",
+            "busket"
+          ]
+        },
+        {
+          "pattern": "about",
+          "name": "about",
+          "target": [
+            "menu",
+            "about"
+          ]
+        }
+      ],
+      "targets": {
+				 "notFound": {
+          "viewName": "notFound",
+          "controlAggregation": "detailPages",
+          "viewLevel": 2
+        },
+        "menu": {
+          "viewName": "menu",
+          "controlAggregation": "masterPages",
+          "viewLevel": 2
+        },
+        "catalog": {
+          "viewName": "catalog",
+          "controlAggregation": "detailPages",
+          "viewLevel": 2
+        },
+        "category": {
+          "viewName": "catalog",
+          "controlAggregation": "detailPages",
+          "viewLevel": 3
+        },
+        "item": {
+          "viewName": "item",
+          "controlAggregation": "detailPages",
+          "viewLevel": 4
+        },
+        "busket": {
+          "viewName": "busket",
+          "controlAggregation": "detailPages",
+          "viewLevel": 2
+        },
+        "about": {
+          "viewName": "about",
+          "controlAggregation": "detailPages",
+          "viewLevel": 2
+        }
+      }
+    },
+    "resources": {
+      "css": {
+        "uri": "css/style.css"
+      }
+    }
+  }
+}

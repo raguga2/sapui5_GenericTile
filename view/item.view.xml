@@ -1,0 +1,9 @@
+<mvc:View 
+  controllerName="namespace.controller.item"
+  displayBlock="true"
+  xmlns="sap.m"
+  xmlns:mvc="sap.ui.core.mvc">
+	<Page
+		title="Товар">
+	</Page>
+</mvc:View>

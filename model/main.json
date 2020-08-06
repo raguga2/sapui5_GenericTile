@@ -1,0 +1,193 @@
+{
+	"types": [
+		{
+			"id": "Asus",
+			"nav": {
+				"rout": "category",
+				"params": {
+					"category": "Asus"
+				}
+			},
+			"title": "Asus"
+		},
+		{
+			"id": "Lenovo",
+			"nav": {
+				"rout": "category",
+				"params": {
+					"category": "Lenovo"
+				}
+			},
+			"title": "Lenovo"
+		},
+        {
+                    "id": "Apple",
+			"nav": {
+				"rout": "category",
+				"params": {
+					"category": "Apple"
+				}
+			},
+			"title": "Apple"
+		},
+        		{
+			"id": "Dell",
+			"nav": {
+				"rout": "category",
+				"params": {
+					"category": "Dell"
+				}
+			},
+			"title": "Dell"
+		},
+                		{
+			"id": "Accer",
+			"nav": {
+				"rout": "category",
+				"params": {
+					"category": "Accer"
+				}
+			},
+			"title": "Accer"
+		},
+                        		{
+			"id": "MSI",
+			"nav": {
+				"rout": "category",
+				"params": {
+					"category": "MSI"
+				}
+			},
+			"title": "MSI"
+		},
+                                		{
+			"id": "Razer",
+			"nav": {
+				"rout": "category",
+				"params": {
+					"category": "Razer"
+				}
+			},
+			"title": "Razer"
+		}
+        
+        
+       
+	],
+    
+	"catalog": [
+        		{
+			"type": "Asus",
+			"namenotebook": "VivoBook 15 X540UA-DM597T",
+			"Cost": 32200,
+			"Quantity": 10,
+			"photo": "images/1.jpg",
+			"busket":"1"
+		},        		{
+			"type": "Asus",
+			"namenotebook":"Zephyrus S GX531GXR",
+			"Cost": 210200,
+			"Quantity": 12,
+			"photo": "images/2.jpg",
+			"busket":"2"
+		},
+        {
+			"type": "Asus",
+			"namenotebook":"GL504GW",
+			"Cost": 173800,
+			"Quantity": 2,
+			"photo": "images/3.jpg",
+			"busket":"3"
+		},
+                {
+			"type": "Lenovo",
+			"namenotebook":"IdeaPad L340-15",
+			"Cost": 101000,
+			"Quantity": 12,
+			"photo": "images/4.jpg",
+			"busket":"4"
+		},                {
+			"type": "Lenovo",
+			"namenotebook":"Legion Y740-15T",
+			"Cost": 87900,
+			"Quantity": 17,
+			"photo": "images/5.jpg",
+			"busket":"5"
+		},
+          {
+			"type": "Lenovo",
+			"namenotebook":"ThinkPad E14",
+			"Cost": 173800,
+			"Quantity": 6,
+			"photo": "images/6.jpg",
+			"busket":"6"
+		},
+                  {
+			"type": "Apple",
+			"namenotebook":"MacBook Air 2020 MWTJ2RU/A",
+			"Cost": 99000,
+			"Quantity": 3,
+			"photo": "images/7.jpg",
+			"busket":"7"
+		},
+                          {
+			"type": "Apple",
+			"namenotebook":"MacBook Pro 16 MVVK2RU/A",
+			"Cost": 230900,
+			"Quantity": 5,
+			"photo": "images/8.jpg",
+			"busket":"8"
+		},
+                                  {
+			"type": "Apple",
+			"namenotebook":"MacBook Pro 2019 MV962RU/A",
+			"Cost": 145900,
+			"Quantity": 3,
+			"photo": "images/9.jpg",
+			"busket":"9"
+		},
+        {
+			"type": "Apple",
+			"namenotebook":"APPLE MacBook Air 13 MQD32RU/A",
+			"Cost": 66799,
+			"Quantity": 1,
+			"photo": "images/10.jpg",
+			"busket":"10"
+		},
+        {
+			"type": "Dell",
+			"namenotebook":"G3 3590",
+			"Cost": 101048,
+			"Quantity": 32,
+			"photo": "images/11.jpg",
+			"busket":"11"
+		},
+                {
+			"type": "Accer",
+			"namenotebook":"SWIFT 3 SF313-52-77ZD",
+			"Cost": 85390,
+			"Quantity": 5,
+			"photo": "images/12.jpg",
+			"busket":"12"
+		},
+                        {
+			"type": "MSI",
+			"namenotebook":"MSI GL65 Leopard 10SDK-232XRU",
+			"Cost": 78990,
+			"Quantity": 5,
+			"photo": "images/13.jpg",
+			"busket":"13"
+		},
+                                {
+			"type": "Razer",
+			"namenotebook":"Razer Blade Stealth 13 2019",
+			"Cost": 97000 ,
+			"Quantity": 2,
+			"photo": "images/14.jpg",
+			"busket":"14"
+		}
+        
+   
+              ]
+    }
+        
