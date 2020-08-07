@@ -6,20 +6,23 @@ headerText="{i18n>mainistTitle}"
   xmlns:mvc="sap.ui.core.mvc">
 <Page
 		title="Каталог">
-		<HBox
+
+		<HBox           
 			id="catalogList"
-			items="{main>/catalog}">
+			items="{main>/catalog}"
+              wrap="Wrap">
+            <Panel width="auto" class="sapUiTinyMarginBeginEnd">
 			<GenericTile
 				header="{main>namenotebook}"
 				subheader="{main>Quantity}"
 				headerImage="{main>photo}">
-					<TileContent footer="{main>Cost}">
-                        
+					<TileContent footer="{main>Cost}">        
 					<VBox>
 						<Button text="В корзину" press="onPress" > </Button> 
 						</VBox>
 					</TileContent>
 			</GenericTile>
+    </Panel>
 		</HBox>
 	</Page>
 </mvc:View>

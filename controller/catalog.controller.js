@@ -48,5 +48,49 @@ sap.ui.define([
 				oList.getBinding('items').filter(oFilter);
       }, this);
     },
+      
+      
+      
+      
+onPress: function(oEvent) {
+			let cartData = oEvent.getSource().getBindingContext("main").getObject()
+			let oModel = oEvent.getSource().getModel("main")
+			let oData = oModel.getProperty("/busket")
+			name = cartData.namenotebook
+			photo = cartData.photo
+			Cost = cartData.Cost
+			Quantity = cartData.Quantity
+			namenotebook = cartData.namenotebook
+            type=cartData.type
+			CurrencyCode = cartData.CurrencyCode;
+			if (Array.isArray(oData)) {
+
+			} else {
+					oData = [];
+			}
+
+			let oBusketItem = oData.find((currentLine) => currentLine.name == name);
+			if (oBusketItem) {
+				let oBusketItemIndex = oData.findIndex((currentLine) => currentLine.name == name);
+				let QuantityBusket = oBusketItem.Quantity;
+				QuantityBusket ++;
+				oModel.setProperty("/busket/"+oBusketItemIndex+"/Quantity", QuantityBusket)
+			} else {
+				oData.push({
+						name: name,
+						photo: photo,
+						Cost: Cost,
+						Quantity: 1,
+						namenotebook: namenotebook,
+                        type: type,
+						CurrencyCode: CurrencyCode
+				});
+				oModel.setProperty("/busket", oData);
+			}
+
+		}
+      
+      
+
   });
 });

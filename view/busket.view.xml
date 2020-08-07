@@ -3,8 +3,64 @@
   displayBlock="true"
   xmlns="sap.m"
   xmlns:mvc="sap.ui.core.mvc">
-	<Page
-		title="Корзина">
-	</Page>
-    
+       <Table
+			id='BusketList'
+			items="{main>/busket}">
+				<columns>
+			<Column
+				width="12em">
+				<Text text="Фото" />
+			</Column>
+			<Column
+				minScreenWidth="Desktop"
+				demandPopin="true"
+				hAlign="End">
+				<Text text="Производители" />
+			</Column>
+			<Column
+				minScreenWidth="Desktop"
+				demandPopin="true"
+				hAlign="End">
+				<Text text="Модель ноутбука" />
+			</Column>
+			<Column
+				minScreenWidth="Desktop"
+				demandPopin="true"
+				hAlign="End">
+				<Text text="Количество" />
+			</Column>
+			<Column
+				hAlign="End">
+				<Text text="Стоимость" />
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem>
+				<cells>
+					<ObjectListItem
+						icon="{main>photo}"/>
+					<Text
+                        text="{main>type}" />
+					<Text
+				        text="{main>namenotebook}" />
+					<HBox> 
+                        <Panel width="auto" class="sapUiLargeMarginBegin">
+						<Button text="-" press="onDelete">
+				            </Button> 
+				                <Input value= "{main>Quantity}" width="2em">
+								</Input>
+				            <Button text="+" press="onAdd">
+				            </Button> 
+                        </Panel>
+					</HBox>
+					<ObjectNumber
+							number="{main>Cost}"
+							unit= "{main>CurrencyCode}"
+							 />
+				</cells>
+			</ColumnListItem>
+		</items>
+		</Table>
+	
+					
 </mvc:View>

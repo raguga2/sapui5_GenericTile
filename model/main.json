@@ -81,6 +81,7 @@
 			"namenotebook": "VivoBook 15 X540UA-DM597T",
 			"Cost": 32200,
 			"Quantity": 10,
+            "CurrencyCode": "RUB",
 			"photo": "images/1.jpg",
 			"busket":"1"
 		},        		{
@@ -88,6 +89,7 @@
 			"namenotebook":"Zephyrus S GX531GXR",
 			"Cost": 210200,
 			"Quantity": 12,
+            "CurrencyCode": "RUB",
 			"photo": "images/2.jpg",
 			"busket":"2"
 		},
@@ -96,6 +98,7 @@
 			"namenotebook":"GL504GW",
 			"Cost": 173800,
 			"Quantity": 2,
+            "CurrencyCode": "RUB",
 			"photo": "images/3.jpg",
 			"busket":"3"
 		},
@@ -104,6 +107,7 @@
 			"namenotebook":"IdeaPad L340-15",
 			"Cost": 101000,
 			"Quantity": 12,
+            "CurrencyCode": "RUB",
 			"photo": "images/4.jpg",
 			"busket":"4"
 		},                {
@@ -111,6 +115,7 @@
 			"namenotebook":"Legion Y740-15T",
 			"Cost": 87900,
 			"Quantity": 17,
+            "CurrencyCode": "RUB",
 			"photo": "images/5.jpg",
 			"busket":"5"
 		},
@@ -119,6 +124,7 @@
 			"namenotebook":"ThinkPad E14",
 			"Cost": 173800,
 			"Quantity": 6,
+            "CurrencyCode": "RUB",
 			"photo": "images/6.jpg",
 			"busket":"6"
 		},
@@ -127,6 +133,7 @@
 			"namenotebook":"MacBook Air 2020 MWTJ2RU/A",
 			"Cost": 99000,
 			"Quantity": 3,
+            "CurrencyCode": "RUB",
 			"photo": "images/7.jpg",
 			"busket":"7"
 		},
@@ -135,6 +142,7 @@
 			"namenotebook":"MacBook Pro 16 MVVK2RU/A",
 			"Cost": 230900,
 			"Quantity": 5,
+            "CurrencyCode": "RUB",
 			"photo": "images/8.jpg",
 			"busket":"8"
 		},
@@ -143,6 +151,7 @@
 			"namenotebook":"MacBook Pro 2019 MV962RU/A",
 			"Cost": 145900,
 			"Quantity": 3,
+            "CurrencyCode": "RUB",
 			"photo": "images/9.jpg",
 			"busket":"9"
 		},
@@ -151,6 +160,7 @@
 			"namenotebook":"APPLE MacBook Air 13 MQD32RU/A",
 			"Cost": 66799,
 			"Quantity": 1,
+            "CurrencyCode": "RUB",
 			"photo": "images/10.jpg",
 			"busket":"10"
 		},
@@ -159,6 +169,7 @@
 			"namenotebook":"G3 3590",
 			"Cost": 101048,
 			"Quantity": 32,
+            "CurrencyCode": "RUB",
 			"photo": "images/11.jpg",
 			"busket":"11"
 		},
@@ -167,6 +178,7 @@
 			"namenotebook":"SWIFT 3 SF313-52-77ZD",
 			"Cost": 85390,
 			"Quantity": 5,
+            "CurrencyCode": "RUB",
 			"photo": "images/12.jpg",
 			"busket":"12"
 		},
@@ -175,6 +187,7 @@
 			"namenotebook":"MSI GL65 Leopard 10SDK-232XRU",
 			"Cost": 78990,
 			"Quantity": 5,
+            "CurrencyCode": "RUB",
 			"photo": "images/13.jpg",
 			"busket":"13"
 		},
@@ -183,6 +196,7 @@
 			"namenotebook":"Razer Blade Stealth 13 2019",
 			"Cost": 97000 ,
 			"Quantity": 2,
+            "CurrencyCode": "RUB",
 			"photo": "images/14.jpg",
 			"busket":"14"
 		}
