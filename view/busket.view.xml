@@ -50,17 +50,27 @@
 				                <Input value= "{main>Quantity}" width="2em">
 								</Input>
 				            <Button text="+" press="onAdd">
-				            </Button> 
+				            </Button>  
                         </Panel>
 					</HBox>
-					<ObjectNumber
-							number="{main>Cost}"
-							unit= "{main>CurrencyCode}"
-							 />
+                            <Text text="{
+                            parts:[ 
+                            'main>Quantity',
+                            'main>Cost'
+                            ],
+				            formatter:'.format1'
+                            }"
+                            />
+
+  
 				</cells>
 			</ColumnListItem>
 		</items>
 		</Table>
-	
+	                            <Text text="Итого:{
+                          path:'main>/busket',
+                          formatter:'.format2'
+                          }"
+                          />
 					
 </mvc:View>
